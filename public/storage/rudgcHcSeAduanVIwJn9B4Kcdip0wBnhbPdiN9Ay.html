@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/css/vendor/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Muhindo Mubaraka">
+    <meta name="title" content="JO-Trace">
+    <meta name="keywords"
+        content="classicads, classified, ads, classified ads, listing, business, directory, jobs, marketing, portal, advertising, local, posting, ad listing, ad posting,">
+    <title>Page Title</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/fonts/font-awesome/fontawesome.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/css/vendor/slick.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/css/custom/main.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/css/custom/index.css">
+    </head>
+
+
+<body>
+
+
+            <header class="header-part">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left"><button type="button" class="header-widget sidebar-btn"><i
+                            class="fas fa-align-left"></i></button><a href="http://127.0.0.1:8000/"
+                        class="header-logo"><img src="http://127.0.0.1:8000/assets/images/logo.png" alt="logo"></a>
+
+                </div>
+                <form action="http://127.0.0.1:8000" class="header-form" action="/">
+                    <div class="header-search pl-3">
+                        <input name="search" type="search" value=""
+                            placeholder="Search, Whatever you need...">
+                        <button type="submit" title="Search Submit "><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+                <div class="header-right">
+                                        
+                    <a href="/register"
+                        class="header-user border rounded pr-3 pl-3 mr-3 text-primary border-primary "><span>Register</span></a><button
+                        type="button" class="header-widget search-btn"><i class="fas fa-search"></i></button>
+
+                    <a href="/login"
+                        class="header-widget header-user border rounded pr-2 border-primary text-primary"><span>Sign
+                            in</span></a><button type="button" class="header-widget search-btn"><i
+                            class="fas fa-search"></i></button>
+                    
+                    <a href="http://127.0.0.1:8000/post-ad" class="btn btn-inline post-btn"><i
+                            class="fas fa-plus-circle"></i><span>post your service</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <aside class="sidebar-part">
+        <div class="sidebar-body">
+            <div class="sidebar-header"><a href="http://127.0.0.1:8000/" class="sidebar-logo"><img
+                        src="http://127.0.0.1:8000/assets/images/logo.png" alt="logo"></a><button
+                    class="sidebar-cross"><i class="fas fa-times"></i></button></div>
+            <div class="sidebar-content">
+                <div class="sidebar-profile">
+
+                    
+
+                        <a href="http://127.0.0.1:8000/" class="btn btn-inline sidebar-post"><i
+                                class="fas fa-plus-circle"></i><span>post your
+                                ad</span></a>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="nav nav-tabs">
+                        <li><a href="#main-menu" class="nav-link active" data-toggle="tab">Categories</a></li>
+                        <li><a href="#author-menu" class="nav-link" data-toggle="tab">My Account</a></li>
+                    </ul>
+                    <div class="tab-pane active" id="main-menu">
+                        <ul class="navbar-list">
+                                                                                    <li class="navbar-item navbar-dropdown"><a class="navbar-link"
+                                    href="#"><span>Vehicles</span><i class="fas fa-plus"></i></a>
+                                <ul class="dropdown-list">
+                                                                        <li class="navbar-item"><a class="navbar-link" href="/cars">
+                                            <span style="color: black!important">
+                                                Cars
+                                            </span>
+                                            <span style="color: black!important">3</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="navbar-item"><a class="navbar-link" href="/motorbikes">
+                                            <span style="color: black!important">
+                                                Motorbikes
+                                            </span>
+                                            <span style="color: black!important">0</span>
+                                        </a>
+                                    </li>
+                                                                </li>
+                        </ul>
+                        </li>
+                                                                                <li class="navbar-item navbar-dropdown"><a class="navbar-link"
+                                    href="#"><span>Property</span><i class="fas fa-plus"></i></a>
+                                <ul class="dropdown-list">
+                                                                        <li class="navbar-item"><a class="navbar-link" href="/land">
+                                            <span style="color: black!important">
+                                                Land
+                                            </span>
+                                            <span style="color: black!important">0</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="navbar-item"><a class="navbar-link" href="/apartments-for-sale">
+                                            <span style="color: black!important">
+                                                Apartments For Sale
+                                            </span>
+                                            <span style="color: black!important">0</span>
+                                        </a>
+                                    </li>
+                                                                </li>
+                        </ul>
+                        </li>
+                                                                                <li class="navbar-item navbar-dropdown"><a class="navbar-link"
+                                    href="#"><span>Mobiles</span><i class="fas fa-plus"></i></a>
+                                <ul class="dropdown-list">
+                                                                        <li class="navbar-item"><a class="navbar-link" href="/mobile-phones">
+                                            <span style="color: black!important">
+                                                Mobile Phones
+                                            </span>
+                                            <span style="color: black!important">0</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="navbar-item"><a class="navbar-link" href="/mobile-phone-accessories">
+                                            <span style="color: black!important">
+                                                Mobile Phone Accessories
+                                            </span>
+                                            <span style="color: black!important">0</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="navbar-item"><a class="navbar-link" href="/mobile-phone-services">
+                                            <span style="color: black!important">
+                                                Mobile Phone Services
+                                            </span>
+                                            <span style="color: black!important">0</span>
+                                        </a>
+                                    </li>
+                                                                </li>
+                        </ul>
+                        </li>
+                                                                                                                                                                                                                            
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="author-menu">
+                                                <ul class="navbar-list text-center">
+
+                            <a href="http://127.0.0.1:8000/login" class="btn btn-inline sidebar-post mt-4"><i
+                                    class="fas fa-sign-in-alt"></i><span>LOGIN</span></a>
+                        </ul>
+                                                                    </div>
+                </div>
+                <div class="sidebar-footer">
+                    <p>All Rights Reserved By <a href="javascript:;">JO-Trace</a></p>
+                    <p>Developed By <a href="javascript:;">##########</a></p>
+                </div>
+            </div>
+        </div>
+    </aside>
+        
+
+    
+
+
+
+<style>
+    .product-widget-dropitem{
+        margin: 0px;
+        margin-top: .6rem;
+    }
+    .product-widget-dropdown{
+        padding: 0px;
+        margin: 0px;
+    }
+    .product-widget-dropdown li a{
+        padding: 0px;
+        margin: 0px;
+        margin-left: 1.5rem;
+    } 
+    .product-widget-dropdown li a:hover{
+        background-color: white;
+    }
+</style>
+<section class="inner-section ad-list-part mt-4">
+    <div class="container">
+        <div class="row content-reverse">
+            <div class="col-lg-4 col-xl-3">
+                <div class="row">
+
+
+                    <div class="col-md-6 col-lg-12 ">
+                        <div class="product-widget pr-4">
+                            <h6 class="product-widget-title">Categories</h6>
+                            <form action="http://127.0.0.1:8000" class="product-widget-form">
+                                <ul class="product-widget-list ">
+                                                                                                            <li class="product-widget-dropitem active"><button type="button"
+                                            class="product-widget-link active"><i class="fas fa-tags"></i>
+                                            Vehicles
+                                        </button>
+                                        <ul class="product-widget-dropdown" style="display: block;">
+                                                                                        <li>
+                                                <a href="http://127.0.0.1:8000/cars">Cars
+                                                    <span class="text-dark">(3)</span></a>
+                                            </li>
+                                                                                        <li>
+                                                <a href="http://127.0.0.1:8000/motorbikes">Motorbikes
+                                                    <span class="text-dark">(0)</span></a>
+                                            </li>
+                                                                                    </ul>
+                                    </li>
+                                                                                                            <li class="product-widget-dropitem active"><button type="button"
+                                            class="product-widget-link active"><i class="fas fa-tags"></i>
+                                            Property
+                                        </button>
+                                        <ul class="product-widget-dropdown" style="display: block;">
+                                                                                        <li>
+                                                <a href="http://127.0.0.1:8000/land">Land
+                                                    <span class="text-dark">(0)</span></a>
+                                            </li>
+                                                                                        <li>
+                                                <a href="http://127.0.0.1:8000/apartments-for-sale">Apartments For Sale
+                                                    <span class="text-dark">(0)</span></a>
+                                            </li>
+                                                                                    </ul>
+                                    </li>
+                                                                                                            <li class="product-widget-dropitem active"><button type="button"
+                                            class="product-widget-link active"><i class="fas fa-tags"></i>
+                                            Mobiles
+                                        </button>
+                                        <ul class="product-widget-dropdown" style="display: block;">
+                                                                                        <li>
+                                                <a href="http://127.0.0.1:8000/mobile-phones">Mobile Phones
+                                                    <span class="text-dark">(0)</span></a>
+                                            </li>
+                                                                                        <li>
+                                                <a href="http://127.0.0.1:8000/mobile-phone-accessories">Mobile Phone Accessories
+                                                    <span class="text-dark">(0)</span></a>
+                                            </li>
+                                                                                        <li>
+                                                <a href="http://127.0.0.1:8000/mobile-phone-services">Mobile Phone Services
+                                                    <span class="text-dark">(0)</span></a>
+                                            </li>
+                                                                                    </ul>
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-12">
+                        <div class="product-widget">
+                            <h6 class="product-widget-title">Filter by cities</h6>
+                            <form class="product-widget-form">
+                                <ul class="product-widget-list product-widget-scroll">
+                                    <li class="product-widget-item">
+                                        <div class="product-widget-checkbox"><input type="checkbox" id="chcek9">
+                                        </div><label class="product-widget-label" for="chcek9"><span
+                                                class="product-widget-text">Los Angeles</span><span
+                                                class="product-widget-number">(95)</span></label>
+                                    </li>
+                                    <li class="product-widget-item">
+                                        <div class="product-widget-checkbox"><input type="checkbox" id="chcek10">
+                                        </div><label class="product-widget-label" for="chcek10"><span
+                                                class="product-widget-text">San Francisco</span><span
+                                                class="product-widget-number">(82)</span></label>
+                                    </li>
+                                    <li class="product-widget-item">
+                                        <div class="product-widget-checkbox"><input type="checkbox" id="chcek11">
+                                        </div><label class="product-widget-label" for="chcek11"><span
+                                                class="product-widget-text">California</span><span
+                                                class="product-widget-number">(1t)</span></label>
+                                    </li>
+                                    <li class="product-widget-item">
+                                        <div class="product-widget-checkbox"><input type="checkbox" id="chcek12">
+                                        </div><label class="product-widget-label" for="chcek12"><span
+                                                class="product-widget-text">Manhattan</span><span
+                                                class="product-widget-number">(46)</span></label>
+                                    </li>
+                                    <li class="product-widget-item">
+                                        <div class="product-widget-checkbox"><input type="checkbox" id="chcek13">
+                                        </div><label class="product-widget-label" for="chcek13"><span
+                                                class="product-widget-text">Baltimore</span><span
+                                                class="product-widget-number">(24)</span></label>
+                                    </li>
+                                    <li class="product-widget-item">
+                                        <div class="product-widget-checkbox"><input type="checkbox" id="chcek14">
+                                        </div><label class="product-widget-label" for="chcek14"><span
+                                                class="product-widget-text">Avocados</span><span
+                                                class="product-widget-number">(34)</span></label>
+                                    </li>
+                                    <li class="product-widget-item">
+                                        <div class="product-widget-checkbox"><input type="checkbox" id="chcek15">
+                                        </div><label class="product-widget-label" for="chcek15"><span
+                                                class="product-widget-text">new york</span><span
+                                                class="product-widget-number">(82)</span></label>
+                                    </li>
+                                    <li class="product-widget-item">
+                                        <div class="product-widget-checkbox"><input type="checkbox" id="chcek16">
+                                        </div><label class="product-widget-label" for="chcek16"><span
+                                                class="product-widget-text">Houston</span><span
+                                                class="product-widget-number">(45)</span></label>
+                                    </li>
+                                    <li class="product-widget-item">
+                                        <div class="product-widget-checkbox"><input type="checkbox" id="chcek17">
+                                        </div><label class="product-widget-label" for="chcek17"><span
+                                                class="product-widget-text">Chicago</span><span
+                                                class="product-widget-number">(19)</span></label>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-lg-8 col-xl-9">
+
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header-filter">
+                            <div class="filter-action">
+                                <a href="http://127.0.0.1:8000/products" title="Clear search" class=" active_tab ">Product
+                                    List</a>
+                                <a href="http://127.0.0.1:8000/suppliers" class=" _tab  ml-2">Supplier List</a>
+                            </div>
+                            <div class="header-filter" style="margin-bottom: -7px">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                
+                <div class="row ad-standard">
+
+
+                                                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+                        <div class="product-card standard">
+    <div class="product-media">
+        <div class="product-img"><img src=http://127.0.0.1:8000/storage/thumb_sXedeOsKkKO1JvYSsWuJbr7uv9wye8U1d49J2S4W.jpg alt="product"></div>
+        <div class="cross-vertical-badge product-badge"><i class="fas fa-clipboard-check"></i><span>recommend</span>
+        </div>
+    </div>
+    <div class="product-content">
+        <ol class="breadcrumb product-category">
+            <li><i class="fas fa-tags"></i></li>
+            <li class="breadcrumb-item"><a href="http://127.0.0.1:8000/cars">Cars</a></li>
+        </ol>
+        <h5 class="product-title"><a href="http://127.0.0.1:8000/12000000">Mitsubishi Outlandar Red 2010
+</a></h5>
+        <div class="product-meta"><span><i class="fas fa-map-marker-alt"></i>Uganda,
+                Kampala</span><span><i
+                    class="fas fa-clock"></i>1 week ago</span></div>
+        <div class="product-info">
+            <h5 class="product-price">$12,000,000<span>/                    Negotiable
+                    </span></h5>
+            <div class="product-btn"><a href="http://127.0.0.1:8000/12000000" title="Compare" class="fas fa-compress"></a><button
+                    type="button" title="Wishlist" class="far fa-heart"></button></div>
+        </div>
+    </div>
+</div>                    </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+                        <div class="product-card standard">
+    <div class="product-media">
+        <div class="product-img"><img src=http://127.0.0.1:8000/storage/thumb_osopx9xJRyasNS2Tpm6yRNW7zoReGPyEdJtUSmV8.jpg alt="product"></div>
+        <div class="cross-vertical-badge product-badge"><i class="fas fa-clipboard-check"></i><span>recommend</span>
+        </div>
+    </div>
+    <div class="product-content">
+        <ol class="breadcrumb product-category">
+            <li><i class="fas fa-tags"></i></li>
+            <li class="breadcrumb-item"><a href="http://127.0.0.1:8000/cars">Cars</a></li>
+        </ol>
+        <h5 class="product-title"><a href="http://127.0.0.1:8000/honda-vezel-z-package-2014">Honda Vezel z package 2014</a></h5>
+        <div class="product-meta"><span><i class="fas fa-map-marker-alt"></i>Turkey,
+                Kampala</span><span><i
+                    class="fas fa-clock"></i>1 week ago</span></div>
+        <div class="product-info">
+            <h5 class="product-price">$32,000<span>/                    Negotiable
+                    </span></h5>
+            <div class="product-btn"><a href="http://127.0.0.1:8000/honda-vezel-z-package-2014" title="Compare" class="fas fa-compress"></a><button
+                    type="button" title="Wishlist" class="far fa-heart"></button></div>
+        </div>
+    </div>
+</div>                    </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+                        <div class="product-card standard">
+    <div class="product-media">
+        <div class="product-img"><img src=http://127.0.0.1:8000/storage/thumb_hWTSNpOVowv3fXUGY0hB6sIekieDMji7RnbIqqIl.jpg alt="product"></div>
+        <div class="cross-vertical-badge product-badge"><i class="fas fa-clipboard-check"></i><span>recommend</span>
+        </div>
+    </div>
+    <div class="product-content">
+        <ol class="breadcrumb product-category">
+            <li><i class="fas fa-tags"></i></li>
+            <li class="breadcrumb-item"><a href="http://127.0.0.1:8000/cars">Cars</a></li>
+        </ol>
+        <h5 class="product-title"><a href="http://127.0.0.1:8000/muhindo-mubaraka">Muhindo Mubaraka</a></h5>
+        <div class="product-meta"><span><i class="fas fa-map-marker-alt"></i>Uganda,
+                Mbarara</span><span><i
+                    class="fas fa-clock"></i>1 week ago</span></div>
+        <div class="product-info">
+            <h5 class="product-price">$1,300<span>/                    Negotiable
+                    </span></h5>
+            <div class="product-btn"><a href="http://127.0.0.1:8000/muhindo-mubaraka" title="Compare" class="fas fa-compress"></a><button
+                    type="button" title="Wishlist" class="far fa-heart"></button></div>
+        </div>
+    </div>
+</div>                    </div>
+                                        
+                    
+
+
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-pagection">
+                            <p class="page-info">Showing 12 of 60 Results</p>
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#"><i
+                                            class="fas fa-long-arrow-alt-left"></i></a></li>
+                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">...</li>
+                                <li class="page-item"><a class="page-link" href="#">67</a></li>
+                                <li class="page-item"><a class="page-link" href="#"><i
+                                            class="fas fa-long-arrow-alt-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    
+
+    
+    
+    <nav class="mobile-nav">
+        <div class="container">
+            <div class="mobile-group"><a href="http://127.0.0.1:8000/" class="mobile-widget"><i
+                        class="fas fa-home"></i><span>home</span></a><a href="http://127.0.0.1:8000/"
+                    class="mobile-widget"><i class="fas fa-user"></i><span>join me</span></a><a
+                    href="http://127.0.0.1:8000/" class="mobile-widget plus-btn"><i class="fas fa-plus"></i><span>Ad
+                        Post</span></a><a href="http://127.0.0.1:8000/" class="mobile-widget"><i
+                        class="fas fa-bell"></i><span>notify</span><sup>0</sup></a><a href="http://127.0.0.1:8000/"
+                    class="mobile-widget"><i class="fas fa-envelope"></i><span>message</span><sup>0</sup></a></div>
+        </div>
+    </nav>
+
+
+    <footer class="footer-part">
+        <div class="container">
+            <div class="row newsletter">
+                <div class="col-lg-6">
+                    <div class="news-content">
+                        <h2>Subscribe for Latest Offers</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, aliquid reiciendis!
+                            Exercitationem soluta provident non.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="news-form"><input type="text" placeholder="Enter Your Email Address"><button
+                            class="btn btn-inline"><i class="fas fa-envelope"></i><span>Subscribe</span></button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="footer-content">
+                        <h3>Contact Us</h3>
+                        <ul class="footer-address">
+                            <li><i class="fas fa-map-marker-alt"></i>
+                                <p>1420 West Jalkuri Fatullah, <span>Narayanganj, BD</span></p>
+                            </li>
+                            <li><i class="fas fa-envelope"></i>
+                                <p>support@classicads.com <span>info@classicads.com</span></p>
+                            </li>
+                            <li><i class="fas fa-phone-alt"></i>
+                                <p>+8801838288389 <span>+8801941101915</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="footer-content">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-widget">
+                            <li><a href="#">Store Location</a></li>
+                            <li><a href="#">Orders Tracking</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Size Guide</a></li>
+                            <li><a href="#">Faq</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="footer-content">
+                        <h3>Information</h3>
+                        <ul class="footer-widget">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Delivery System</a></li>
+                            <li><a href="#">Secure Payment</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="footer-info"><a href="#"><img src="http://127.0.0.1:8000/assets/images/logo.png"
+                                alt="logo"></a>
+                        <ul class="footer-count">
+                            <li>
+                                <h5>929,238</h5>
+                                <p>Registered Users</p>
+                            </li>
+                            <li>
+                                <h5>242,789</h5>
+                                <p>Community Ads</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-card-content">
+                        <div class="footer-payment"><a href="#"><img
+                                    src="http://127.0.0.1:8000/assets/images/pay-card/01.jpg" alt="01"></a><a
+                                href="#"><img src="http://127.0.0.1:8000/assets/images/pay-card/02.jpg" alt="02"></a><a
+                                href="#"><img src="http://127.0.0.1:8000/assets/images/pay-card/03.jpg" alt="03"></a><a
+                                href="#"><img src="http://127.0.0.1:8000/assets/images/pay-card/04.jpg" alt="04"></a>
+                        </div>
+                        <div class="footer-option"><button type="button" data-toggle="modal" data-target="#language"><i
+                                    class="fas fa-globe"></i>English</button><button type="button" data-toggle="modal"
+                                data-target="#currency"><i class="fas fa-dollar-sign"></i>USD</button></div>
+                        <div class="footer-app"><a href="#"><img
+                                    src="http://127.0.0.1:8000/assets/images/play-store.png" alt="play-store"></a><a
+                                href="#"><img src="http://127.0.0.1:8000/assets/images/app-store.png"
+                                    alt="app-store"></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+            <div class="container">
+                <div class="footer-end-content">
+                    <p>All Copyrights Reserved &copy; 2021 - Developed by <a href="#">Mironcoder</a></p>
+                    <ul class="footer-social">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="currency">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Choose a Currency</h4><button class="fas fa-times" data-dismiss="modal"></button>
+                </div>
+                <div class="modal-body"><button class="modal-link active">United States Doller (USD) -
+                        $</button><button class="modal-link">Euro (EUR) - €</button><button class="modal-link">British
+                        Pound (GBP) -
+                        £</button><button class="modal-link">Australian Dollar (AUD) - A$</button><button
+                        class="modal-link">Canadian Dollar (CAD) - C$</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="language">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Choose a Language</h4><button class="fas fa-times" data-dismiss="modal"></button>
+                </div>
+                <div class="modal-body"><button class="modal-link active">English</button><button
+                        class="modal-link">bangali</button><button class="modal-link">arabic</button><button
+                        class="modal-link">germany</button><button class="modal-link">spanish</button></div>
+            </div>
+        </div>
+    </div>
+
+        
+        <script src="http://127.0.0.1:8000/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="http://127.0.0.1:8000/assets/js/vendor/popper.min.js"></script>
+    <script src="http://127.0.0.1:8000/assets/js/vendor/bootstrap.min.js"></script>
+    <script src="http://127.0.0.1:8000/assets/js/vendor/slick.min.js "></script>
+    <script src="http://127.0.0.1:8000/assets/js/custom/slick.js"></script>
+    <script src="http://127.0.0.1:8000/assets/js/custom/main.js "></script>
+
+
+    </body>
+
+</html>
