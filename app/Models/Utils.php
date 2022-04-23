@@ -82,7 +82,7 @@ class Utils
         $d['status'] = $status;
         $d['code'] = $code;
         $d['body'] = $body;
-        print_r(json_encode($d));
+        echo json_encode($d);
         die();
     }
     public static function get_chat_threads($user_id)

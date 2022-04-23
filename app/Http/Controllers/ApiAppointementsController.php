@@ -17,7 +17,10 @@ class ApiAppointementsController extends Controller
 
         $u = User::find($user_id);
         if ($u == null) {
-            Utils::show_response(0, 0, 'Failed. user not found on db..');
+            return Utils::response([
+                'status' => '0', 
+                'message' => 'Failed. User not found.',
+            ]);
         }
 
         $items = [];
@@ -45,7 +48,10 @@ class ApiAppointementsController extends Controller
             (!isset($r->details)) ||
             (!isset($r->category_id))
         ) {
-            Utils::show_response(0, 0, 'Failed. information submited not enough.');
+            return Utils::response([
+                'status' => '0', 
+                'message' => 'No enough data.',
+            ]);
         }
  
 
@@ -53,12 +59,18 @@ class ApiAppointementsController extends Controller
         $product_id = ((int)($r->product_id));
         $u = User::find($user_id);
         if ($u == null) {
-            Utils::show_response(0, 0, 'Failed. user not found on db..');
+            return Utils::response([
+                'status' => '0', 
+                'message' => 'User not found.',
+            ]);
         }
         
         $p = Product::find($product_id);
         if ($p == null) {
-            Utils::show_response(0, 0, 'Failed. Service not found on db..');
+            return Utils::response([
+                'status' => '0', 
+                'message' => 'Service not found..',
+            ]);
         }
 
 
@@ -74,11 +86,20 @@ class ApiAppointementsController extends Controller
         $ap->appointment_time = '';
         $ap->details = $r->details;
         $ap->order_location = $u->sub_county;
+        
 
         if ($ap->save()) {
-            Utils::show_response(1, 1, 'Appintment submited successfully.');
+            return Utils::response([
+                'status' => '1',
+                'data' => '',
+                'message' => 'Appinment submited successfully!',
+            ]);
         } else {
-            Utils::show_response(0, 0, 'Failed. to submit appintment.');
+            return Utils::response([
+                'status' => '0',
+                'data' => '',
+                'message' => 'Failed to submit appinment. Please try again.',
+            ]);
         }
     }
 
