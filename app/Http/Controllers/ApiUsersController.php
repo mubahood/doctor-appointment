@@ -174,6 +174,7 @@ class ApiUsersController
         if (
             $request->email == null ||
             $request->name == null ||
+            $request->sub_county == null ||
             $request->password == null
         ) {
             return Utils::response([
@@ -186,6 +187,11 @@ class ApiUsersController
 
         $u['name'] = $request->input("name");
         $u['username'] = $request->input("email");
+        $u['email'] = $request->input("email");
+        $u['sub_county'] = $request->input("sub_county");
+        $u['latitude'] = $request->input("latitude");
+        $u['longitude'] = $request->input("longitude");
+        $u['user_type'] = 'Client';
 
         $old_user = User::where('username', $u['username'])->first();
         if ($old_user) {
@@ -196,12 +202,14 @@ class ApiUsersController
         }
 
         $u['password'] = Hash::make($request->input("password"));
+
+
         $user = User::create($u);
         $_user = User::find($user->id);
 
         return Utils::response([
             'status' => 1,
-            'message' => "You must provide Name, email and password.",
+            'message' => "Account created successfully!",
             'data' => $_user
         ]);
     }
