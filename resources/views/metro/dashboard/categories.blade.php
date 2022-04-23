@@ -194,7 +194,7 @@ if ($edit_item == null) {
 
                         @include('metro.components.input-text', [
                             'label' => 'Description',
-                            'required' => 'required',
+                            'required' => 'required', 
                             'classes' => 'mt-4',
                             'value' => $edit_item->description,
                             'attributes' => [
